@@ -1,0 +1,78 @@
+body {
+    background-image: url('logos/5.gif');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*es para el cuadro de arriba*/
+.top-bar {
+    background-color: #0f0064;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+.logo img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #317dd4;
+}
+/*reloj pruebra*/
+body {
+    height: 100vh;
+    background-color: #ff0000;
+}
+.container {
+    text-align: center;
+}
+#clock {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+#timer {
+    font-size: 1.5em;
+}
+input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    width: 100px;
+    text-align: center;
+}
+button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+#timer-display {
+    font-size: 2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
