@@ -1,9 +1,11 @@
 body {
-    background-image: url('logos/040823_chatgpt_feat.gif');
-    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    margin: 0; /* Elimina márgenes por defecto */
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-image: url('imagenes/pagina_pricipal/ai.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* La imagen cubre toda la pantalla */
     background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-attachment: fixed; /* Fija la imagen al hacer scroll */
 }
 /*es para el apartado de web*/
 body {
