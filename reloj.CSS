@@ -1,18 +1,10 @@
 body {
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Ocupa toda la pantalla */
-    background-image: url('imagenes/pagina_pricipal/tiempo.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll */
-}
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
 }
-/*es para el cuadro de arriba*/
 .top-bar {
     background-color: #0f0064;
     color: white;
@@ -26,9 +18,6 @@ nav {
     background-color: #f8f8f8;
     padding: 10px 20px;
 }
-.logo img {
-    height: 50px;
-}
 nav ul {
     list-style: none;
     margin: 0;
@@ -40,26 +29,24 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #333333;
+    color: #333;
     font-weight: bold;
 }
 nav ul li a:hover {
     color: #317dd4;
 }
-/*reloj pruebra*/
-body {
-    height: 100vh;
-    background-color: #ff0000;
-}
 .container {
     text-align: center;
+    padding-top: 50px;
 }
 #clock {
     font-size: 3em;
     margin-bottom: 30px;
+    color: white;
 }
 #timer {
     font-size: 1.5em;
+    color: white;
 }
 input {
     padding: 10px;
