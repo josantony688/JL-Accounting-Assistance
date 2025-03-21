@@ -1,34 +1,27 @@
-body {
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Ocupa toda la pantalla */
-    background-image: url('imagenes/pagina_pricipal/ai\ afuera.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll */
-}
-/*es para el apartado de web*/
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Cambia esto por el color que desees */
+    color: #333; /* Asegúrate de que el color del texto contraste bien con el fondo */
 }
-/*es para el cuadro de arriba*/
+
+/* Barra superior */
 .top-bar {
     background-color: #0f0064;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
+/* Navegación */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
     padding: 10px 20px;
-}
-.logo img {
-    height: 50px;
 }
 nav ul {
     list-style: none;
@@ -47,18 +40,19 @@ nav ul li a {
 nav ul li a:hover {
     color: #317dd4;
 }
+
+/* Secciones de IA */
 .ai-section {
     text-align: center;
     margin: 20px;
 }
 .ai-image {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px;
     height: auto;
     border: 2px solid #333;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
 .ai-image:hover {
-    transform: scale(1.1); /* Adds a zoom effect on hover */
+    transform: scale(1.1); /* Efecto de zoom */
 }
