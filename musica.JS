@@ -10,19 +10,28 @@ const canciones = [
     "musica/audio/utomp3.com - Oscar Maydon x Fuerza Regida  TU BODA.mp3",
     "musica/audio/videoplayback (1).m4a"
 ];
+
 // Obtener elementos del DOM
 const audio = document.getElementById('audio');
 const nextBtn = document.getElementById('nextBtn');
+
 // Variable para el índice actual
 let indiceActual = 0;
+
 // Función para cambiar a la siguiente canción
 function siguienteCancion() {
     // Incrementar el índice y usar el operador % para volver al principio de la lista si es necesario
     indiceActual = (indiceActual + 1) % canciones.length;
+
     // Cambiar la fuente del audio
-    audio.src = canciones[indiceActual];   
+    audio.src = canciones[indiceActual];
+    
     // Reproducir la canción inmediatamente después de cambiarla
     audio.play();
 }
+
 // Event listener para el botón "Siguiente Canción"
 nextBtn.addEventListener('click', siguienteCancion);
+
+// Para manejar el cambio de canción cuando se llega al final, puedes hacer que el reproductor se detenga y reinicie
+audio.addEventListener('ended', siguienteCancion);
