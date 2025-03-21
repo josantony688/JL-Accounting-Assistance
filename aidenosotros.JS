@@ -9,7 +9,7 @@ function procesarPregunta() {
         respuestaTexto = "El balance general es un informe financiero que muestra los activos, pasivos y patrimonio de una empresa.";
     } else if (pregunta.includes("activos") || pregunta.includes("pasivos")) {
         respuestaTexto = "Los activos son los bienes y derechos de una empresa, mientras que los pasivos son sus obligaciones.";
-    } 
+    }
     // Industria del Vestido
     else if (pregunta.includes("tendencias") || pregunta.includes("moda")) {
         respuestaTexto = "Las tendencias de moda cambian cada temporada, influenciadas por diseñadores y eventos globales.";
@@ -25,10 +25,13 @@ function procesarPregunta() {
         } catch (error) {
             respuestaTexto = "No pude calcular esa operación.";
         }
+    } else if (pregunta.includes("derivada de")) {
+        respuestaTexto = "Para derivar funciones, usa las reglas de derivación como la del producto o la cadena.";
     } else if (pregunta.includes("integral de")) {
         respuestaTexto = "Para calcular una integral, puedes usar herramientas como Wolfram Alpha o software especializado.";
     } else if (pregunta.includes("ecuación cuadrática")) {
-        respuestaTexto = "La ecuación cuadrática tiene la forma ax² + bx + c = 0. Se resuelve con la fórmula general: x = (-b ± √(b² - 4ac)) / 2a.";
+        respuestaTexto = "La ecuación cuadrática tiene la forma ax² + bx + c = 0. Usa la fórmula: x = (-b ± √(b² - 4ac)) / 2a.";
     }
+
     respuesta.innerHTML = respuestaTexto;
 }
