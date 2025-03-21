@@ -1,18 +1,27 @@
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f8f9fa;
+    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por tu imagen */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding: 20px;
+    color: #ffffff;
 }
+
+/* Contenedor */
 .container {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
+/* Textarea y botón */
 textarea {
     width: 100%;
     height: 100px;
@@ -27,6 +36,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Respuesta */
 #respuesta {
     margin-top: 20px;
     padding: 10px;
@@ -34,36 +48,22 @@ button {
     border-radius: 5px;
     text-align: left;
 }
-body {
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Ocupa toda la pantalla */
-    background-image: url('imagenes/pagina_pricipal/ai\ de\ nosotros.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll */
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-/*es para el cuadro de arriba*/
+
+/* Barra superior */
 .top-bar {
     background-color: #0f0064;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
+/* Navegación */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
     padding: 10px 20px;
-}
-.logo img {
-    height: 50px;
 }
 nav ul {
     list-style: none;
@@ -81,4 +81,16 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #317dd4;
+}
+/* Animación para respuesta */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#respuesta {
+    animation: fadeIn 0.5s ease-in-out;
 }
