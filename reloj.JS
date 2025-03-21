@@ -1,10 +1,11 @@
-// Reloj en tiempo real
+// Actualizar reloj en tiempo real
 function updateClock() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    
+    const now = new Date().toLocaleString("en-US", { timeZone: "America/Mexico_City" });
+    const currentTime = new Date(now);
+    const hours = currentTime.getHours().toString().padStart(2, '0');
+    const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+    const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
@@ -18,10 +19,9 @@ document.getElementById('start-timer').addEventListener('click', () => {
         alert('Por favor ingresa un número válido de segundos.');
         return;
     }
-
     timerTime = inputTime;
     document.getElementById('timer-display').textContent = formatTime(timerTime);
-    
+
     if (timerInterval) {
         clearInterval(timerInterval);
     }
@@ -36,7 +36,6 @@ document.getElementById('start-timer').addEventListener('click', () => {
         }
     }, 1000);
 });
-
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60).toString().padStart(2, '0');
     const secs = (seconds % 60).toString().padStart(2, '0');
