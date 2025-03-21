@@ -1,19 +1,9 @@
 body {
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Ocupa toda la pantalla */
-    background-image: url('imagenes/pagina_pricipal/principal.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    background-attachment: fixed; /* Fija la imagen al hacer scroll */
-}
-/*es para el apartado de web*/
-body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif;
 }
-/*es para el cuadro de arriba*/
 .top-bar {
     background-color: #0f0064;
     color: white;
@@ -26,9 +16,6 @@ nav {
     align-items: center;
     background-color: #f8f8f8;
     padding: 10px 20px;
-}
-.logo img {
-    height: 50px;
 }
 nav ul {
     list-style: none;
