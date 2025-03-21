@@ -1,15 +1,15 @@
 let display = document.getElementById("display");
 
 function appendToDisplay(value) {
-  display.value += value;
+    display.value += value;
 }
 function clearDisplay() {
-  display.value = "";
+    display.value = "";
 }
 function calculateResult() {
-  try {
-    display.value = eval(display.value);
-  } catch (error) {
-    display.value = "Error";
-  }
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Error";
+    }
 }
