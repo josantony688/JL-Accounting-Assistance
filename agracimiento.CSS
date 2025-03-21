@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo de color claro */
+    color: #333; /* Color de texto */
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #0f0064;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #317dd4;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Créditos */
+.creditos-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ajusta el diseño en pantallas pequeñas */
+}
+.credito {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+.credito-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.credito-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+/* Títulos y texto */
+h1 {
+    color: #0f0064;
+}
+.credito h2 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+.credito p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
