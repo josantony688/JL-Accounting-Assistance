@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Cálculo</title>
+    <link rel="stylesheet" href="hojadecalculo.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>tel: no disponible | correo electronico: no disponible</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="musica.HTML">Música</a></li>
+                <li><a href="calculadora.HTML">Calculadora</a></li>
+                <li><a href="ReloJ.HTML">Temporizador</a></li>
+                <li><a href="ai.HTML">AI</a></li>
+                <li><a href="Bace de Datos.HTML">Base de datos</a></li>
+                <li><a href="Hoja de calculo.HTML">Hoja de cálculo</a></li>
+                <li><a href="aplicaciones de apoyo.HTML">Aplicaciones de apoyo</a></li>
+                <li><a href="agracimiento.HTML">Aportacion del Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Hoja de Cálculo</h1>
+        <table id="spreadsheet">
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div>
+            <button id="sum">Sumar</button>
+            <button id="subtract">Restar</button>
+            <button id="multiply">Multiplicar</button>
+            <button id="divide">Dividir</button>
+        </div>
+        <div id="results"></div> <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Ingresa tu correo">
+            <button id="sendEmail">Enviar por correo</button>
+        </div>
+    </div>
+    <script src="hojadecalculo.js"></script>
+</body>
+</html>
